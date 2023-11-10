@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://l4jfyyvd0os4"]
+
+[ext_resource type="Script" path="res://framework/BetterCamera.gd" id="3"]
+[ext_resource type="Script" path="res://game.gd" id="4"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("4")
+char_distance = 50
+stage_width = 2500
+time = 3600
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="." groups=["Camera"]]
+limit_bottom = 150
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("3")
+
+[node name="Fx" type="Node2D" parent="."]
+
+[node name="GhostStartTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true

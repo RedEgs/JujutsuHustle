@@ -1,0 +1,1279 @@
+[gd_scene load_steps=152 format=2]
+
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
+[ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/Sukunatemplate2.png" type="Texture" id=3]
+[ext_resource path="res://characters/stickman/sprites/stickman6.png" type="Texture" id=4]
+[ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=5]
+[ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=6]
+[ext_resource path="res://characters/stickman/sprites/stickman13.png" type="Texture" id=7]
+[ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=8]
+[ext_resource path="res://characters/stickman/sprites/stickman11.png" type="Texture" id=9]
+[ext_resource path="res://characters/stickman/sprites/stickman16.png" type="Texture" id=10]
+[ext_resource path="res://SukunaMod/characters/Sukuna/States/SlideKick.gd" type="Script" id=11]
+[ext_resource path="res://characters/stickman/sprites/stickman14.png" type="Texture" id=12]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=13]
+[ext_resource path="res://characters/stickman/sprites/stickman12.png" type="Texture" id=14]
+[ext_resource path="res://characters/stickman/sprites/stickman15.png" type="Texture" id=15]
+[ext_resource path="res://SukunaMod/characters/Sukuna/BlackFlashBar.tscn" type="PackedScene" id=16]
+[ext_resource path="res://SukunaMod/characters/Sukuna/States/OverHere.gd" type="Script" id=17]
+[ext_resource path="res://SukunaMod/characters/Sukuna/States/Boring.gd" type="Script" id=18]
+[ext_resource path="res://characters/stickman/sprites/stickman22.png" type="Texture" id=19]
+[ext_resource path="res://characters/stickman/sprites/stickman34.png" type="Texture" id=20]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/Sukunajumpkickdown.png" type="Texture" id=21]
+[ext_resource path="res://SukunaMod/characters/Sukuna/States/AirBoring.gd" type="Script" id=22]
+[ext_resource path="res://characters/stickman/sprites/stickman19.png" type="Texture" id=23]
+[ext_resource path="res://characters/stickman/sprites/stickman23.png" type="Texture" id=24]
+[ext_resource path="res://characters/stickman/sprites/stickman28.png" type="Texture" id=25]
+[ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=26]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Particles/ClawHit.tscn" type="PackedScene" id=27]
+[ext_resource path="res://SukunaMod/characters/Sukuna/States/Cleave.gd" type="Script" id=28]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/Sukunacleaveground.png" type="Texture" id=29]
+[ext_resource path="res://characters/stickman/sprites/stickman21.png" type="Texture" id=30]
+[ext_resource path="res://characters/stickman/sprites/stickman27.png" type="Texture" id=31]
+[ext_resource path="res://characters/stickman/sprites/stickman36.png" type="Texture" id=32]
+[ext_resource path="res://characters/stickman/sprites/stickman20.png" type="Texture" id=33]
+[ext_resource path="res://characters/stickman/sprites/stickman26.png" type="Texture" id=34]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/Sukunacleaveair.png" type="Texture" id=35]
+[ext_resource path="res://SukunaMod/characters/Sukuna/States/WorldCut.gd" type="Script" id=36]
+[ext_resource path="res://characters/stickman/sprites/stickman49.png" type="Texture" id=37]
+[ext_resource path="res://characters/stickman/sprites/stickman44.png" type="Texture" id=39]
+[ext_resource path="res://characters/stickman/sprites/stickman46.png" type="Texture" id=40]
+[ext_resource path="res://characters/stickman/sprites/stickman41.png" type="Texture" id=41]
+[ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=42]
+[ext_resource path="res://characters/stickman/sprites/stickman54.png" type="Texture" id=43]
+[ext_resource path="res://characters/stickman/sprites/stickman52.png" type="Texture" id=44]
+[ext_resource path="res://characters/stickman/sprites/stickman59.png" type="Texture" id=45]
+[ext_resource path="res://characters/stickman/sprites/stickman60.png" type="Texture" id=46]
+[ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=47]
+[ext_resource path="res://characters/stickman/sprites/stickman45.png" type="Texture" id=48]
+[ext_resource path="res://characters/stickman/sprites/stickman48.png" type="Texture" id=49]
+[ext_resource path="res://characters/stickman/sprites/stickman42.png" type="Texture" id=50]
+[ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=51]
+[ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=52]
+[ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=53]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Particles/paparticlehit1.png" type="Texture" id=54]
+[ext_resource path="res://characters/stickman/sprites/phantomdash1.png" type="Texture" id=55]
+[ext_resource path="res://characters/stickman/sprites/phantomdash3.png" type="Texture" id=56]
+[ext_resource path="res://characters/stickman/sprites/stickman47.png" type="Texture" id=57]
+[ext_resource path="res://characters/stickman/sprites/stickman39.png" type="Texture" id=58]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Particles/cutparticle.tscn" type="PackedScene" id=59]
+[ext_resource path="res://characters/stickman/sprites/phantomdash2.png" type="Texture" id=60]
+[ext_resource path="res://characters/stickman/sprites/stickman40.png" type="Texture" id=61]
+[ext_resource path="res://characters/stickman/sprites/stickman51.png" type="Texture" id=62]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump3.png" type="Texture" id=63]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin1.png" type="Texture" id=64]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy1.png" type="Texture" id=65]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=66]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=67]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin4.png" type="Texture" id=68]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin6.png" type="Texture" id=69]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=70]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump2.png" type="Texture" id=71]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy4.png" type="Texture" id=72]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light1.png" type="Texture" id=73]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light3.png" type="Texture" id=74]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=75]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin5.png" type="Texture" id=76]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin3.png" type="Texture" id=77]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin7.png" type="Texture" id=78]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light2.png" type="Texture" id=79]
+[ext_resource path="res://sound/common/slash4.wav" type="AudioStream" id=80]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/Sukunatemplate.png" type="Texture" id=81]
+[ext_resource path="res://SukunaMod/characters/Sukuna/FireArrow.tscn" type="PackedScene" id=82]
+[ext_resource path="res://SukunaMod/characters/Sukuna/States/FireArrow.gd" type="Script" id=83]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/FireArrowSH.png" type="Texture" id=84]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sukuna.gd" type="Script" id=85]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/Sukuna portrait.png" type="Texture" id=86]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
+shader = ExtResource( 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 21 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 21 )
+region = Rect2( 1024, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 21 )
+region = Rect2( 1280, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 21 )
+region = Rect2( 1536, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 21 )
+region = Rect2( 1792, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 21 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 21 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 21 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 21 )
+region = Rect2( 1024, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 21 )
+region = Rect2( 1280, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 21 )
+region = Rect2( 1536, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 21 )
+region = Rect2( 1792, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 21 )
+region = Rect2( 2048, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 81 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 35 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 35 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 35 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=62]
+atlas = ExtResource( 35 )
+region = Rect2( 1024, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 5120, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 81 )
+region = Rect2( 2048, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 81 )
+region = Rect2( 2304, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=63]
+atlas = ExtResource( 84 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 84 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=65]
+atlas = ExtResource( 84 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=66]
+atlas = ExtResource( 84 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=67]
+atlas = ExtResource( 84 )
+region = Rect2( 1024, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=68]
+atlas = ExtResource( 84 )
+region = Rect2( 1280, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 81 )
+region = Rect2( 1280, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 81 )
+region = Rect2( 5120, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 81 )
+region = Rect2( 5376, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 81 )
+region = Rect2( 5632, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 81 )
+region = Rect2( 5888, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 81 )
+region = Rect2( 6144, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 29 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 29 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 29 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 29 )
+region = Rect2( 1024, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 3 )
+region = Rect2( 7424, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 3 )
+region = Rect2( 6912, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 3 )
+region = Rect2( 7680, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 3 )
+region = Rect2( 7168, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 81 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 3 )
+region = Rect2( 2304, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 81 )
+region = Rect2( 1024, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 3 )
+region = Rect2( 1792, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 81 )
+region = Rect2( 3584, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 81 )
+region = Rect2( 3840, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 81 )
+region = Rect2( 4096, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 81 )
+region = Rect2( 4352, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 81 )
+region = Rect2( 4608, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 3 )
+region = Rect2( 6400, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
+region = Rect2( 6656, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 81 )
+region = Rect2( 7936, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 81 )
+region = Rect2( 8192, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 81 )
+region = Rect2( 7936, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 81 )
+region = Rect2( 8192, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 3 )
+region = Rect2( 2560, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 3 )
+region = Rect2( 2816, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 3 )
+region = Rect2( 3072, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 3 )
+region = Rect2( 3328, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 81 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 3 )
+region = Rect2( 1536, 0, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=26]
+animations = [ {
+"frames": [ SubResource( 50 ), SubResource( 50 ), SubResource( 51 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ) ],
+"loop": true,
+"name": "AerialBoring",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "AirAttack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "AirFireball",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 61 ), ExtResource( 61 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "AirUpwardPunch",
+"speed": 60.0
+}, {
+"frames": [ SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 45 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 47 ), SubResource( 48 ), SubResource( 48 ), SubResource( 49 ) ],
+"loop": true,
+"name": "Boring",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "Burst",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ) ],
+"loop": true,
+"name": "CleaveAir",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": true,
+"name": "DashBackward",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": true,
+"name": "DashForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 62 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "DiveKick",
+"speed": 60.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "DoubleJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 48 ) ],
+"loop": true,
+"name": "DropKick",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ) ],
+"loop": true,
+"name": "FireArrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 34 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "Fireball",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "ForwardThrow",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "Getup",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "Grab",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ) ],
+"loop": true,
+"name": "GroundedCleave",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "GroundedKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 9 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "GroundedPunch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 40 ), ExtResource( 40 ), ExtResource( 40 ), ExtResource( 57 ), ExtResource( 57 ), ExtResource( 57 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 53 ) ],
+"loop": true,
+"name": "GroundedSweep",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 14 ) ],
+"loop": true,
+"name": "HurtAerial",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 15 ) ],
+"loop": true,
+"name": "HurtGroundedHigh",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 16 ) ],
+"loop": true,
+"name": "HurtGroundedLow",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 17 ) ],
+"loop": true,
+"name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 18 ) ],
+"loop": true,
+"name": "InstantCancel",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 19 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "JumpBack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 51 ), ExtResource( 51 ), ExtResource( 51 ), ExtResource( 51 ), ExtResource( 51 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 42 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "JumpKick",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 20 ) ],
+"loop": true,
+"name": "Knockdown",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 27 ) ],
+"loop": true,
+"name": "Landing",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 75 ), ExtResource( 75 ), ExtResource( 75 ), ExtResource( 66 ), ExtResource( 66 ), ExtResource( 66 ), ExtResource( 75 ), ExtResource( 75 ), ExtResource( 75 ), ExtResource( 72 ) ],
+"loop": true,
+"name": "NunChukHeavy",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 71 ), ExtResource( 71 ), ExtResource( 71 ), ExtResource( 71 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "NunChukJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 79 ), ExtResource( 79 ), ExtResource( 79 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "NunChukLight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 70 ), ExtResource( 70 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ) ],
+"loop": true,
+"name": "NunChukSpin",
+"speed": 60.0
+}, {
+"frames": [ SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ) ],
+"loop": true,
+"name": "OverHere",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 21 ) ],
+"loop": true,
+"name": "ParryHigh",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ) ],
+"loop": true,
+"name": "ParryLow",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 55 ), ExtResource( 55 ), ExtResource( 55 ), ExtResource( 60 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "QuickSlash",
+"speed": 60.0
+}, {
+"frames": [ SubResource( 37 ), SubResource( 38 ) ],
+"loop": true,
+"name": "RollBackward",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 39 ), SubResource( 40 ) ],
+"loop": true,
+"name": "RollForward",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
+"loop": true,
+"name": "SlideKick",
+"speed": 21.0
+}, {
+"frames": [ ExtResource( 47 ) ],
+"loop": true,
+"name": "ThrowTech",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 23 ), ExtResource( 33 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 19 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "Uppercut",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "Wait",
+"speed": 30.0
+}, {
+"frames": [ SubResource( 25 ) ],
+"loop": true,
+"name": "WallSlam",
+"speed": 5.0
+} ]
+
+[node name="Sukuna" instance=ExtResource( 2 )]
+material = SubResource( 1 )
+script = ExtResource( 85 )
+gravity = "0.8"
+max_air_speed = "10"
+max_fall_speed = "15"
+num_air_movements = 3
+character_portrait = ExtResource( 86 )
+player_info_scene = ExtResource( 16 )
+num_feints = 3
+
+[node name="Sprite" parent="Flip" index="0"]
+material = SubResource( 2 )
+frames = SubResource( 26 )
+animation = "FireArrow"
+
+[node name="SlideKick" type="Node2D" parent="StateMachine" index="47"]
+script = ExtResource( 11 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "SlideKick"
+anim_length = 12
+sprite_anim_length = 4
+force_dir_x = "5"
+force_speed = "2"
+force_tick = 2
+title = "Slide Kick"
+type = 1
+self_hit_cancellable = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/SlideKick" index="0"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 16
+y = -17
+width = 10
+height = 17
+damage = 100
+victim_hitlag = 3
+hits_vs_aerial = false
+hit_height = 2
+knockback = "5"
+start_tick = 4
+active_ticks = 1
+
+[node name="OverHere" type="Node2D" parent="StateMachine" index="48"]
+script = ExtResource( 17 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "OverHere"
+anim_length = 7
+force_dir_x = "2"
+force_speed = "6"
+force_tick = 1
+title = "Over Here"
+type = 1
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded
+GroundedAttack"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/OverHere" index="0"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 14
+y = -18
+width = 12
+height = 17
+damage = 70
+knockback = "4.5"
+start_tick = 6
+active_ticks = 1
+
+[node name="Boring" type="Node2D" parent="StateMachine" index="49"]
+script = ExtResource( 18 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Boring"
+anim_length = 14
+force_dir_x = "0.7"
+force_dir_y = "-1.43"
+force_speed = "4"
+reset_momentum = true
+title = "Boring."
+type = 1
+burst_cancellable = false
+self_hit_cancellable = false
+self_interruptable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+GroundedAttack
+"
+interrupt_into_string = "Grounded
+GroundedAttack
+Aerial
+AerialAttack"
+hit_cancel_into_string = "Grounded"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Boring" index="0"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 15
+y = -14
+width = 12
+height = 27
+damage = 80
+hitstun_ticks = 22
+cancellable = false
+can_clash = false
+hit_height = 0
+dir_y = "3"
+knockback = "5.5"
+start_tick = 10
+active_ticks = 4
+
+[node name="AirBoring" type="Node2D" parent="StateMachine" index="50"]
+script = ExtResource( 22 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "AerialBoring"
+anim_length = 14
+title = "Boring."
+type = 1
+air_type = 1
+interrupt_from_string = "Aerial
+AerialAttack"
+interrupt_into_string = "Aerial
+AerialAttack"
+hit_cancel_into_string = "Aerial
+AerialAttack
+"
+interrupt_exceptions_string = "Grounded
+GroundedAttack
+"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/AirBoring" index="0"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 15
+y = -14
+width = 12
+height = 27
+damage = 90
+hitstun_ticks = 20
+can_clash = false
+hit_height = 0
+dir_y = "3"
+knockback = "4"
+knockdown = true
+start_tick = 8
+
+[node name="Cleave" type="Node2D" parent="StateMachine" index="51"]
+script = ExtResource( 28 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "GroundedCleave"
+anim_length = 16
+particle_scene = ExtResource( 27 )
+particle_position = Vector2( 56, -20 )
+spawn_particle_on_enter = true
+title = "Cleave"
+type = 1
+burst_cancellable = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+apply_pushback = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Cleave" index="0"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 6
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/Cleave" index="1"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 2
+group = 1
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 7
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/Cleave" index="2"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 0
+group = 2
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 8
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox4" type="Node2D" parent="StateMachine/Cleave" index="3"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+group = 3
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 9
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox5" type="Node2D" parent="StateMachine/Cleave" index="4"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+group = 4
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 10
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox6" type="Node2D" parent="StateMachine/Cleave" index="5"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 2
+group = 5
+knockback = "4"
+pushback_x = "-2"
+start_tick = 11
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox7" type="Node2D" parent="StateMachine/Cleave" index="6"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 0
+group = 6
+knockback = "4"
+pushback_x = "-2"
+start_tick = 12
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox8" type="Node2D" parent="StateMachine/Cleave" index="7"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 2
+group = 7
+knockback = "4"
+pushback_x = "-2"
+start_tick = 13
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox9" type="Node2D" parent="StateMachine/Cleave" index="8"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 0
+group = 8
+knockback = "4"
+pushback_x = "-2"
+start_tick = 14
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox10" type="Node2D" parent="StateMachine/Cleave" index="9"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 24
+cancellable = false
+parry_meter_gain = -2
+hit_height = 0
+group = 9
+knockback = "4"
+pushback_x = "-2"
+start_tick = 15
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="AirCleave" type="Node2D" parent="StateMachine" index="52"]
+script = ExtResource( 28 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "CleaveAir"
+anim_length = 16
+particle_scene = ExtResource( 27 )
+particle_position = Vector2( 56, -20 )
+spawn_particle_on_enter = true
+title = "Cleave"
+type = 1
+air_type = 1
+burst_cancellable = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Aerial
+"
+interrupt_into_string = "Aerial
+AerialAttack"
+apply_pushback = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/AirCleave" index="0"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 6
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/AirCleave" index="1"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 2
+group = 1
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 7
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/AirCleave" index="2"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 0
+group = 2
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 8
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox4" type="Node2D" parent="StateMachine/AirCleave" index="3"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+group = 3
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 9
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox5" type="Node2D" parent="StateMachine/AirCleave" index="4"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+group = 4
+knockback = "0.1"
+pushback_x = "-2"
+start_tick = 10
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox6" type="Node2D" parent="StateMachine/AirCleave" index="5"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 2
+group = 5
+knockback = "4"
+pushback_x = "-2"
+start_tick = 11
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox7" type="Node2D" parent="StateMachine/AirCleave" index="6"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 0
+group = 6
+knockback = "4"
+pushback_x = "-2"
+start_tick = 12
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox8" type="Node2D" parent="StateMachine/AirCleave" index="7"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 2
+group = 7
+knockback = "4"
+pushback_x = "-2"
+start_tick = 13
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox9" type="Node2D" parent="StateMachine/AirCleave" index="8"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 20
+cancellable = false
+parry_meter_gain = -2
+hit_height = 0
+group = 8
+knockback = "4"
+pushback_x = "-2"
+start_tick = 14
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="Hitbox10" type="Node2D" parent="StateMachine/AirCleave" index="9"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 56
+y = -20
+width = 40
+height = 40
+damage = 10
+hitstun_ticks = 24
+cancellable = false
+parry_meter_gain = -2
+group = 9
+knockback = "4"
+pushback_x = "-2"
+start_tick = 15
+active_ticks = 1
+loop_active_ticks = 6
+loop_inactive_ticks = 18
+
+[node name="WorldCut" type="Node2D" parent="StateMachine" index="53"]
+script = ExtResource( 36 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "GroundedCleave"
+anim_length = 40
+particle_position = Vector2( 167, -18 )
+title = "World Cut"
+type = 3
+button_texture = ExtResource( 54 )
+burst_cancellable = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+reversible = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded
+GroundedAttack"
+hit_cancel_into_string = "Grounded"
+apply_pushback = false
+super_level = 5
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/WorldCut" index="0"]
+z_index = 1000
+script = ExtResource( 13 )
+x = 205
+y = -18
+width = 154
+height = 154
+damage = 400
+hitstun_ticks = 50
+cancellable = false
+can_counter_hit = false
+ignore_armor = true
+can_clash = false
+hit_particle = ExtResource( 59 )
+replace_hit_particle = true
+hit_sound = ExtResource( 80 )
+dir_y = "0"
+knockback = "2"
+wall_slam = true
+start_tick = 5
+active_ticks = 15
+
+[node name="FireArrow" type="Node2D" parent="StateMachine" index="54"]
+script = ExtResource( 83 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "FireArrow"
+anim_length = 20
+projectile_scene = ExtResource( 82 )
+projectile_tick = 8
+projectile_pos_x = 16
+projectile_pos_y = -20
+title = "Fire Arrow"
+type = 2
+air_type = 2
+burst_cancellable = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+GroundedAttack
+Aerial
+AerialAttack"
+interrupt_into_string = "Grounded
+GroundedAttack
+Aerial
+AerialAttack"
+hit_cancel_into_string = "Aerial
+Grounded"
+apply_pushback = false
+beats_backdash = true

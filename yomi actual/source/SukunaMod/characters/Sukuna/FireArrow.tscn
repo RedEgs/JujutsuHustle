@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://projectile/DirProjectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
+[ext_resource path="res://SukunaMod/characters/Sukuna/Sprites/Sprite-0007.png" type="Texture" id=3]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=4]
+[ext_resource path="res://sound/common/hit4.wav" type="AudioStream" id=5]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="BaseProjectile" instance=ExtResource( 1 )]
+material = SubResource( 1 )
+fizzle_on_ceiling = false
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 2 )
+
+[node name="Default" parent="StateMachine" index="0"]
+move_speed = "8"
+homing = true
+homing_turn_speed = "4"
+max_homing_speed = "7"
+lifetime = 300
+relative_data_dir = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 4 )
+y = -1
+width = 32
+height = 14
+damage = 80
+hitstun_ticks = 25
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+ignore_armor = true
+can_clash = false
+replace_hit_particle = true
+hit_sound = ExtResource( 5 )
+dir_y = "0"
+knockback = "2"
+ground_bounce = false
+start_tick = 1
+active_ticks = 0
+always_on = true

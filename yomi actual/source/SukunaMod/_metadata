@@ -1,0 +1,12 @@
+{
+    "name": "Sukuna",
+    "friendly_name": "Sukuna",
+    "description": "The King of Curses (ALPHA)",
+    "author": "Rose EX and Money Pigeon",
+    "version": "0.5.9",
+    "link": "",
+    "id": "00001",
+    "overwrites": false,
+    "requires": ["char_loader"],
+    "priority": 0
+}
